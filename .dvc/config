@@ -1,0 +1,4 @@
+[core]
+    remote = test
+['remote "test"']
+    url = s3://dvc-test-vunt93/course-ds-base-v3
