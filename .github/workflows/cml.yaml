@@ -1,4 +1,4 @@
-name: train-my-model
+name: Train my model with Pull Request
 
 on:
   pull_request:
