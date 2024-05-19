@@ -73,7 +73,7 @@ jobs:
           # echo '![](./vega.png)' >> report.md
           # ls -l
           # echo 'Line 75'
-          # cml comment create --watch report.md
+          cml comment create report.md
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
