@@ -1,0 +1,125 @@
+{
+  "install": "/usr/local/bin/npm install --global canvas@2 vega@5 vega-cli@5 vega-lite@5",
+  "date": "Sun May 19 2024 12:42:05 GMT+0000 (Coordinated Universal Time)",
+  "error": {},
+  "exception": true,
+  "level": "error",
+  "message": "unhandledRejection: Invalid typed array length: 4294835611\n
+      RangeError: Invalid typed array length: 4294835611\n
+      at new Int8Array (<anonymous>)\n
+      at Object.write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:44744)\n
+      at Object.write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:151332)\n
+      at doWritev (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:144274)\n
+      at _fd_write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:144487)\n
+      at wasm://wasm/00123836:wasm-function[176]:0x1b8f4\n
+      at wasm://wasm/00123836:wasm-function[188]:0x1bdb2\n
+      at wasm://wasm/00123836:wasm-function[189]:0x1be5f\n
+      at wasm://wasm/00123836:wasm-function[416]:0x2afbb\n
+      at wasm://wasm/00123836:wasm-function[160]:0x1acfb",
+  "os": { "loadavg": [0.83, 0.3, 0.1], "uptime": 435.82 },
+  "process": {
+    "argv": [
+      "/opt/hostedtoolcache/cml/0.20.3/x64/cml",
+      "/snapshot/cml/bin/cml.js",
+      "comment",
+      "create",
+      "report.md"
+    ],
+    "cwd": "/home/runner/work/course-ds-base-v3/course-ds-base-v3",
+    "execPath": "/opt/hostedtoolcache/cml/0.20.3/x64/cml",
+    "gid": 127,
+    "memoryUsage": {
+      "arrayBuffers": 42053090,
+      "external": 76546823,
+      "heapTotal": 67862528,
+      "heapUsed": 31454248,
+      "rss": 151691264
+    },
+    "pid": 2220,
+    "uid": 1001,
+    "version": "v16.16.0"
+  },
+  "stack": "RangeError: Invalid typed array length: 4294835611\n    at new Int8Array (<anonymous>)\n    at Object.write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:44744)\n    at Object.write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:151332)\n    at doWritev (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:144274)\n    at _fd_write (/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js:8:144487)\n    at wasm://wasm/00123836:wasm-function[176]:0x1b8f4\n    at wasm://wasm/00123836:wasm-function[188]:0x1bdb2\n    at wasm://wasm/00123836:wasm-function[189]:0x1be5f\n    at wasm://wasm/00123836:wasm-function[416]:0x2afbb\n    at wasm://wasm/00123836:wasm-function[160]:0x1acfb",
+  "trace": [
+    {
+      "column": null,
+      "file": null,
+      "function": "new Int8Array",
+      "line": null,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 44744,
+      "file": "/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js",
+      "function": "Object.write",
+      "line": 8,
+      "method": "write",
+      "native": false
+    },
+    {
+      "column": 151332,
+      "file": "/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js",
+      "function": "Object.write",
+      "line": 8,
+      "method": "write",
+      "native": false
+    },
+    {
+      "column": 144274,
+      "file": "/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js",
+      "function": "doWritev",
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 144487,
+      "file": "/snapshot/cml/node_modules/@npcz/magic/dist/magic-js.js",
+      "function": "_fd_write",
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": null,
+      "file": "wasm://wasm/00123836:wasm-function[176]",
+      "function": null,
+      "line": null,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": null,
+      "file": "wasm://wasm/00123836:wasm-function[188]",
+      "function": null,
+      "line": null,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": null,
+      "file": "wasm://wasm/00123836:wasm-function[189]",
+      "function": null,
+      "line": null,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": null,
+      "file": "wasm://wasm/00123836:wasm-function[416]",
+      "function": null,
+      "line": null,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": null,
+      "file": "wasm://wasm/00123836:wasm-function[160]",
+      "function": null,
+      "line": null,
+      "method": null,
+      "native": false
+    }
+  ]
+}
