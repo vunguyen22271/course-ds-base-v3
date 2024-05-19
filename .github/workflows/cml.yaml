@@ -63,17 +63,17 @@ jobs:
           echo 'Line 62'
           dvc metrics diff --md main >> report.md
 
-          # Add figure to report
-          dvc plots diff --target reports/confusion_matrix_data.csv --show-vega main > vega.json
-          ls -l
-          echo 'Line 79'
-          vl2png vega.json -s 1.3 > vega.png
-          ls -l
-          echo 'Line 72'
-          echo '![](./vega.png)' >> report.md
-          ls -l
-          echo 'Line 75'
-          cml comment create --watch report.md
+          # # Add figure to report
+          # dvc plots diff --target reports/confusion_matrix_data.csv --show-vega main > vega.json
+          # ls -l
+          # echo 'Line 79'
+          # vl2png vega.json -s 1.3 > vega.png
+          # ls -l
+          # echo 'Line 72'
+          # echo '![](./vega.png)' >> report.md
+          # ls -l
+          # echo 'Line 75'
+          # cml comment create --watch report.md
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
