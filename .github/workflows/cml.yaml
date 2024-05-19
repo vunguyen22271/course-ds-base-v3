@@ -66,6 +66,8 @@ jobs:
           vl2png vega.json -s 1.3 > vega.png
           echo '![](./vega.png)' >> report.md
 
+          ls -l
+          echo 'Line 70'
           # # Add confused matrix to report
           # echo '![](./reports/confusion_matrix.png)' >> report.md
           cml comment create report.md
