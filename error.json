@@ -1,5 +1,5 @@
 {
-  "install": "/usr/local/bin/npm install --global canvas@2 vega@5 vega-cli@5 vega-lite@5",
+  "install": "/usr/local/bin/npm install --global canvas@2 vega@5 vega-cli@5 vega-lite@5 @npcz/magic@1",
   "date": "Sun May 19 2024 12:42:05 GMT+0000 (Coordinated Universal Time)",
   "error": {},
   "exception": true,
