@@ -53,5 +53,18 @@ jobs:
           # Add figure to report
           dvc plots diff --target reports/confusion_matrix_data.csv --show-vega main > vega.json
           vl2png vega.json -s 1.3 > vega.png
+          ls -l
+          echo 'Line 57'
           echo '![](./vega.png)' >> report.md
+          ls -l
+          echo 'Line 60'
           cml comment create --pr --publish report.md
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: |
+            vega.json
+            vega.png
+            report.md
