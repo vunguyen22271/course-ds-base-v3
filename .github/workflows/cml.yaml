@@ -21,18 +21,18 @@ jobs:
   run:
     name: Train my model
     runs-on: [ubuntu-latest]
-    container: ghcr.io/iterative/cml:0-dvc3-base1
+    # container: ghcr.io/iterative/cml:0-dvc3-base1
 
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '17'
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     node-version: '17'
 
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - uses: iterative/setup-cml@v1
+      - uses: iterative/setup-cml@v2
 
       # - uses: iterative/setup-dvc@v1
 
@@ -55,7 +55,7 @@ jobs:
           dvc repro
           ls -l
           echo 'Line 57'
-          git config --global --add safe.directory /__w/course-ds-base-v3/course-ds-base-v3
+          # git config --global --add safe.directory /__w/course-ds-base-v3/course-ds-base-v3
 
           # Use DVC metrics diff to compare metrics to main
           git fetch --prune --unshallow
